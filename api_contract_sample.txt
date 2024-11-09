@@ -1,0 +1,16 @@
+Request:
+    URI: cashcard/{id}
+    HTTP Verb: GET
+    Body: None
+
+Response:
+    HTTP Status:
+        200 OK if the user is authorized and cash card is successfully retrieved.
+        401 UNAUTHORIZED if the user is not authenticated of unauthorized.
+        404 NOT FOUND if the user is authenticated and authorized but no cash card is found.
+    Response Body Type: JSON
+    Example Response Body:
+        {
+            "id": 8,
+            "amount": 188.4
+        }
